@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ContactApp</string>
+    <string name="insert_data">Insert Data</string>
+    <string name="update_data">Update Data</string>
+    <string name="delete_data">Delete Data</string>
+    <string name="nama">Nama</string>
+    <string name="create_contact">Create Contact</string>
+    <string name="inputkan_nama">Inputkan Nama</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="inputkan_nomor_telepon">Inputkan Nomor Telepon</string>
+    <string name="simpan_data">Simpan Data</string>
+    <string name="update_contact">Update Contact</string>
+    <string name="refresh_data">Refresh Data</string>
+    <string name="detail_kontak">Detail Kontak</string>
+    <string name="nama_kontak">Nama kontak</string>
+    <string name="kembali">Kembali</string>
+    <string name="nomor_telepon_kontak">Nomor telepon kontak</string>
+</resources>
