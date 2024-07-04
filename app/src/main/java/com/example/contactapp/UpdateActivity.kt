@@ -61,7 +61,7 @@ class UpdateActivity : Activity(), View.OnClickListener {
 
     private fun initComponents() {
         edtNama = findViewById(R.id.edt_update_nama)
-        edtTelepon = findViewById(R.id.edt_update_telepon)
+        edtTelepon = findViewById(R.id.edt_update_telephone)
         btnSimpan = findViewById(R.id.btn_update_simpan)
         database = Database(this)
     }

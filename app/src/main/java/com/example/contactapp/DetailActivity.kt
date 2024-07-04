@@ -8,12 +8,13 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class DetailActivity : Activity(), View.OnClickListener {
     private lateinit var tvNama: TextView
-    private lateinit var btnBack: Button
     private lateinit var tvTelepon: TextView
+    private lateinit var btnBack: ImageView
     private lateinit var database: Database
 
     companion object {
@@ -56,7 +57,7 @@ class DetailActivity : Activity(), View.OnClickListener {
     private fun initComponents() {
         tvNama = findViewById(R.id.tv_detail_nama)
         btnBack = findViewById(R.id.btn_detail_back)
-        tvTelepon = findViewById(R.id.tv_detail_telepon)
+        tvTelepon = findViewById(R.id.tv_detail_telephone)
         database = Database(this)
     }
 
