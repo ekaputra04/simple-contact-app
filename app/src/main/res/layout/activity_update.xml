@@ -3,68 +3,106 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".UpdateActivity">
+
+    <ImageView
+        android:id="@+id/btn_update_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_update_judul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_semi_bold"
         android:gravity="center_horizontal"
-        android:paddingVertical="24dp"
         android:text="@string/update_contact"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_update_nama"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="12dp"
-        android:text="@string/nama"
-        android:textColor="@color/purple_700"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tv_update_judul" />
+        android:background="@drawable/background_white_radius_top"
+        android:minHeight="600dp"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_update_judul"
+        app:layout_constraintVertical_bias="1.0">
 
-    <EditText
-        android:id="@+id/edt_update_nama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/inputkan_nama"
-        app:layout_constraintTop_toBottomOf="@id/tv_update_nama" />
+        <TextView
+            android:id="@+id/tv_update_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/nama"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_update_telepon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="12dp"
-        android:text="@string/nomor_telepon"
-        android:textColor="@color/purple_700"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/edt_update_nama" />
+        <EditText
+            android:id="@+id/edt_update_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_input"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/inputkan_nama"
+            android:padding="16dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_update_nama" />
 
-    <EditText
-        android:id="@+id/edt_update_telepon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/inputkan_nomor_telepon"
-        app:layout_constraintTop_toBottomOf="@id/tv_update_telepon" />
+        <TextView
+            android:id="@+id/tv_update_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/nomor_telepon"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_update_nama" />
 
-    <Button
-        android:id="@+id/btn_update_simpan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@color/purple_700"
-        android:text="@string/update_data"
-        android:textColor="@color/white"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/edt_update_telepon" />
+        <EditText
+            android:id="@+id/edt_update_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_input"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/inputkan_nomor_telepon"
+            android:padding="16dp"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_update_telephone" />
+
+        <Button
+            android:id="@+id/btn_update_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="@string/simpan_data"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/edt_update_telephone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
