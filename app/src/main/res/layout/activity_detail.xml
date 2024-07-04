@@ -61,6 +61,7 @@
             android:hint="@string/nama_kontak"
             android:textColor="@color/dark"
             android:textSize="18sp"
+            android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/img_detail_photo" />

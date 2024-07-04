@@ -35,14 +35,15 @@ class CreateActivity : Activity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         if (v?.id == R.id.btn_create_simpan) {
-            val nama = edtNama.text.trim()
-            val telephone = edtTelepon.text.trim()
+            val nama = edtNama.text
+            val telephone = edtTelepon.text
 
             if (nama.isNullOrEmpty()) {
                 edtNama.error = "Inputkan Nama!"
             }
+
             if (telephone.isNullOrEmpty()) {
-                edtNama.error = "Inputkan Nama!"
+                edtTelepon.error = "Inputkan Nomor Telepon!"
             }
 
             if (nama.isNotEmpty() && telephone.isNotEmpty()) {
