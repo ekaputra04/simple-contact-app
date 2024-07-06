@@ -15,7 +15,7 @@ Simple Contacts App adalah aplikasi kontak sederhana yang dibangun dengan Kotlin
 
 Berikut adalah video demonstrasi aplikasi:
 
-<div align= "center" width="220px">
+<div align= "center" width="200px">
 
 ![Video Demonstrasi](/assets/demo-contacts-app.gif)
 
