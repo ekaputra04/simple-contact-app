@@ -1,6 +1,8 @@
 # Simple Contact App
 
-Simple contact app adalah aplikasi kontak sederhana yang dibangun dengan Kotlin untuk platform Android. Aplikasi ini memungkinkan pengguna untuk menambahkan, mengupdate, dan menghapus kontak serta melihat detail kontak.
+![Deskripsi](/assets/background.png)
+
+Simple Contacts App adalah aplikasi kontak sederhana yang dibangun dengan Kotlin untuk platform Android. Aplikasi ini memungkinkan pengguna untuk menambahkan, mengupdate, dan menghapus kontak serta melihat detail kontak.
 
 ## Fitur
 
@@ -13,7 +15,11 @@ Simple contact app adalah aplikasi kontak sederhana yang dibangun dengan Kotlin 
 
 Berikut adalah video demonstrasi aplikasi:
 
-![Video Demonstrasi](https://github.com/ekaputra04/simple-contact-app/assets/114041267/308df0da-cabb-41a9-97b0-3895e68611a2)
+<div align= "center" width="300px">
+
+![Video Demonstrasi](/assets/demo-contacts-app.gif)
+
+</div>
 
 ## Instalasi
 
