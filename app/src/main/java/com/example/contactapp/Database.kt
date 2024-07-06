@@ -20,8 +20,8 @@ class Database(context: Context) :
 
         val sql = "CREATE TABLE IF NOT EXISTS kontak (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "nama TEXT NOT NULL," +
-                "no_telepon TEXT NOT NULL);"
+                "nama TEXT NOT NULL UNIQUE," +
+                "no_telepon TEXT NOT NULL UNIQUE);"
         Log.d("data", "OnCreate: $sql")
         db?.execSQL(sql)
     }

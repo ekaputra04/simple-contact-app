@@ -10,12 +10,14 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 
 class UpdateActivity : Activity(), View.OnClickListener {
     private lateinit var edtNama: EditText
     private lateinit var edtTelepon: EditText
     private lateinit var btnSimpan: Button
+    private lateinit var btnKembali: ImageView
     private lateinit var database: Database
     private lateinit var nama: String
     private lateinit var name: String
@@ -49,20 +51,21 @@ class UpdateActivity : Activity(), View.OnClickListener {
             // Lakukan sesuatu dengan data dari cursor
             nama = cursor.getString(cursor.getColumnIndex("nama"))
             no_telepon = cursor.getString(cursor.getColumnIndex("no_telepon"))
-            Log.i("namaInfo", nama)
-            Log.i("namaInfo", no_telepon)
+
             edtNama.setText(cursor.getString(1).toString())
             edtTelepon.setText(cursor.getString(2).toString())
         }
 
         cursor.close()
         btnSimpan.setOnClickListener(this)
+        btnKembali.setOnClickListener(this)
     }
 
     private fun initComponents() {
         edtNama = findViewById(R.id.edt_update_nama)
         edtTelepon = findViewById(R.id.edt_update_telephone)
         btnSimpan = findViewById(R.id.btn_update_simpan)
+        btnKembali = findViewById(R.id.btn_update_back)
         database = Database(this)
     }
 
@@ -76,8 +79,11 @@ class UpdateActivity : Activity(), View.OnClickListener {
                         name + "';"
             )
             Toast.makeText(this, "Data Berhasil diupdate", Toast.LENGTH_LONG).show()
-            setResult(Activity.RESULT_OK) // Set hasil dengan RESULT_OK
-            finish() // Tutup aktivitas
+            setResult(Activity.RESULT_OK)
+            finish()
+        }
+        if (view?.id == R.id.btn_update_back) {
+            finish()
         }
     }
 }
